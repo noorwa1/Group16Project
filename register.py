@@ -55,17 +55,7 @@ def create_user():
         print("you are already registered")
 
 
-"""""
-New_User_list[0] = input("Enter your ID please \n ")
-New_User_list[1] = input("Enter your username please \n ")
-New_User_list[2] = input("Enter your password please \n ")
-New_User_list[3] = input("Enter your title please \n ")
 
-print("print new user list\n",New_User_list)
-
-new_user()
-
-"""
 
 
 create_user()
