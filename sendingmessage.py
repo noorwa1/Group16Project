@@ -28,33 +28,7 @@ db = firebase.database()
 auth = firebase.auth()
 storage = firebase.storage()
 
-'''
-KV=Builder.load_string("""
-<Message_sending>:
-    ScreenManager:
-        id: Manager
-        Screen:
-            BoxLayout:
-                orintaion:'vertical'
-                GridLayout:
-                    cols:1
-                    Label:
-                        text:'Write a string'
-                    TextInput:
-                        size_hint_y: .2
-                GridLayout:
-                    cols: 1
-                    Button:
-                        text: 'Patch Line'
-                        on_release: app.patch(JSON.text)
-                        
-                    Button:
-                        text:'Post Line'
-                        on_release: app.post(JSON.text)
-                        
-                  
-""")
-'''
+
 
 class Message_sending(Screen):
     url = 'https://file-uploading-2e4d3-default-rtdb.firebaseio.com/.json'
