@@ -1,6 +1,7 @@
 screen_nav = """
 Screen:    
     Message_sending:
+    Receive:
 
 <Message_sending>
     name:'Message'
@@ -58,5 +59,24 @@ Screen:
             tmail.text=""
             msgtext.text=""
         on_release:
-            root.home_button()    
+            root.home_button()
+            
+            
+<Receive>
+    id: manager
+    Screen:
+        BoxLayout:
+            orientation: 'vertical'
+            GridLayout:
+                cols:1
+            GridLayout:
+                cols:1
+                Button:
+                    text: 'Delete'
+                    on_release: app.delete(JSON.text)
+                MDRectangleFlatButton:
+                    text: 'Show Message'
+                    on_release: app.get()
+                
+                
 """
